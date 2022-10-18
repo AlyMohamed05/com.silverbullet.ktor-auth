@@ -1,6 +1,6 @@
 package com.silverbullet.user.data
 
-import com.silverbullet.user.data.model.User
+import com.silverbullet.user.model.User
 
 interface UserDataSource {
 

@@ -1,5 +1,7 @@
 package com.silverbullet.di
 
+import com.silverbullet.security.token.TokenService
+import com.silverbullet.security.token.TokenServiceImpl
 import com.silverbullet.user.data.UserDataSource
 import com.silverbullet.user.data.UserDataSourceImpl
 import org.koin.dsl.module
@@ -17,6 +19,10 @@ val mainModule = module {
 
     single<UserDataSource> {
         UserDataSourceImpl(get())
+    }
+
+    single<TokenService> {
+        TokenServiceImpl()
     }
 
 }
